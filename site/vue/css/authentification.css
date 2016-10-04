@@ -1,0 +1,36 @@
+
+h1, h2{
+font-family: monospace;
+color: #6495ed;
+width: 100%;
+text-align: center;
+}
+
+table {
+border: medium solid #6495ed;
+border-collapse: collapse;
+width: 50%;
+
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+th {
+font-family: monospace;
+border: thin solid #6495ed;
+width: 50%;
+padding: 5px;
+background-color:#EFF6FF;
+
+}
+td {
+font-family: sans-serif;
+border: 0px;
+width: 50%;
+padding: 5px;
+text-align: center;
+background-color: #ffffff;
+}
