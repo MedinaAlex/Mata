@@ -2,7 +2,7 @@
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
     }
-    $path = $_SERVER['DOCUMENT_ROOT'] ."/Mata/site/";
+    $path = $_SERVER['DOCUMENT_ROOT'];
     require($path."/model/dao/Dao.php");
  
     if(isset($_POST['mail']) && isset($_POST['password'])){
