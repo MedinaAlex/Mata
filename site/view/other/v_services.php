@@ -3,9 +3,9 @@
         session_start();
     }
     $path = $_SERVER['DOCUMENT_ROOT'];
-    require($path."model/dao/Dao.php");
-    require_once($path."model/bean/Service.php");
-    require_once($path."model/bean/Utilisateur.php");
+    require($path."/model/dao/Dao.php");
+    require_once($path."/model/bean/Service.php");
+    require_once($path."/model/bean/Utilisateur.php");
 
 ?>
 <nav class="navbar navbar-default" style="background-color:#3366ff;width:80%;margin:auto;margin-top:50px;">
