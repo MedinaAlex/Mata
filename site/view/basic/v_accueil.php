@@ -37,7 +37,6 @@
 
 <div class="home">
     
-   <h1>Bienvenue sur Troc Monsieur !</h1>
 
   
 
