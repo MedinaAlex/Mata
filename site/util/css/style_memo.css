@@ -1,0 +1,42 @@
+    body { 
+	overflow-y: scroll
+	}
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+	width: auto;
+	height: 300px !important;
+	margin: auto;
+  }
+.navbar{
+vertical-align:middle;
+}
+.miniature{
+	height: 100px !important;
+	width: auto;
+	margin: auto;
+}
+  .btn-custom-bar { 
+background-color: hsl(0, 0%, 16%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5b5b5b", endColorstr="#282828"); background-image: -khtml-gradient(linear, left top, left bottom, from(#5b5b5b), to(#282828)); background-image: -moz-linear-gradient(top, #5b5b5b, #282828); background-image: -ms-linear-gradient(top, #5b5b5b, #282828); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5b5b5b), color-stop(100%, #282828)); background-image: -webkit-linear-gradient(top, #5b5b5b, #282828); background-image: -o-linear-gradient(top, #5b5b5b, #282828); background-image: linear-gradient(#5b5b5b, #282828); border-color: #282828 #282828 hsl(0, 0%, 11%); color: #fff !important; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33); -webkit-font-smoothing: antialiased;
+  }
+.navbar-inverse input.form-text{
+ background-color:#0f1217;
+ border: 1px solid #0f1217;
+ border-radius: 4px;
+ color: #fff;
+ transition: all 0.3s linear 0s;
+ vertical-align:middle;
+}
+.row tt {
+   display:inline;
+   float:left;
+   border:1px solid #FF6600;
+   margin:0px;
+   padding:3px;
+  }
+.maclasse tr td:first-child
+{
+ width:120px !important;
+}
+.maclasse tr td:last-child{
+width:120px !important;
+}
