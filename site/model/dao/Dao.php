@@ -5,8 +5,8 @@ if (session_status() == PHP_SESSION_NONE) {
 $path = $_SERVER['DOCUMENT_ROOT'];
 require_once("ConnexionException.php");
 require_once("AccesTableException.php");
-require_once($path."model/bean/Service.php");
-require_once($path."model/bean/Utilisateur.php");
+require_once($path."/model/bean/Service.php");
+require_once($path."/model/bean/Utilisateur.php");
 
 
 class Dao
