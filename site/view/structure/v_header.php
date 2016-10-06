@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Troc Monsieur</title>
 	<link rel="shortcut icon" href="util/images/100.ico"/>
 	<link href="util/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
