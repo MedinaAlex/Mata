@@ -256,7 +256,8 @@
               <tbody>
               <?php
                 $dao = New Dao();
-                $services = $dao->getListeServiceById($_SESSION['id_user']);
+                $id_user = $_SESSION['id_user'];
+                $services = $dao->getListeServiceById($id_user);
                 if ($services!=null){
                     foreach ($services as $service){
                         echo "<tr>";
