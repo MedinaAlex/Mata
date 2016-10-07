@@ -220,8 +220,8 @@ sinon null est retourné
   public function insertUtilisateur($nom, $prenom, $datenaissance, $mail, $motdepasse)
   {
     $this->connexion();
-    $stmt = $this->connexion->query("delete from service where id = '$id'");
-    $sth->execute();
+    $sth = $this->connexion->prepare($this->INSERT_USER);
+    $sth->execute(array($nom, $prenom, $datenaissance, $mail, md5($motdepasse));
   }
 
   public function sessionId(){
