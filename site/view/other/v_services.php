@@ -28,7 +28,6 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div style="font-family:Oswald;" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav" style="color:white;">
-        <li><a href="#" style="color:white;"><i class="fa fa-user"></i>  Contact</a></li>
         <li><a data-toggle="modal" data-target="#addService" style="color:white;"><i class="fa fa-plus"></i>  Ajouter un service</a></li>
         </Ul>
       <ul class="nav navbar-nav navbar-right" style="color:white;">

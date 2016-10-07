@@ -30,9 +30,6 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div style="font-family:Oswald;" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav" style="color:white;">
-        <li><a href="#" style="color:white;"><i class="fa fa-user"></i>  Contact</a></li>
-        </Ul>
       <ul class="nav navbar-nav navbar-right" style="color:white;">
         <li><a href="view/other/deconnexion.php" style="color:white;"><i class="fa fa-sign-out"></i>  Déconnexion</a></li>
           </ul>
