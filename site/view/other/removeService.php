@@ -1,7 +1,5 @@
 <?php
-    if (session_status() == PHP_SESSION_NONE) {
-        session_start();
-    }
+
     $path = $_SERVER['DOCUMENT_ROOT'];
     require($path."/model/dao/Dao.php");
  
