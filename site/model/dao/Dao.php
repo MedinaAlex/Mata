@@ -221,7 +221,7 @@ sinon null est retourné
   {
     $this->connexion();
     $sth = $this->connexion->prepare($this->INSERT_USER);
-    $sth->execute(array($nom, $prenom, $datenaissance, $mail, md5($motdepasse));
+    $sth->execute(array($nom, $prenom, $datenaissance, $mail, md5($motdepasse)));
   }
 
   public function sessionId(){
