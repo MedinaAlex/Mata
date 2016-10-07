@@ -220,6 +220,23 @@ sinon null est retourné
   public function insertUtilisateur($nom, $prenom, $datenaissance, $mail, $motdepasse)
   {
     $this->connexion();
+    $stmt = $this->connexion->query("delete from service where id = '$id'");
+    $sth->execute();
+  }
+
+  public function sessionId(){
+    if(isset($_SESSION['mail'])){
+      $mail = $_SESSION['mail'];
+      $this->connexion();
+      $stmt = $this->connexion->query("SELECT id FROM utilisateur where mail = '$mail'");
+      $users = $stmt->fetchall();
+      $_SESSION['id_user'] = $users[0][0];
+    }
+  }
+
+  public function deleteService($id)
+  {
+    $this->connexion();
     $sth = $this->connexion->prepare($this->INSERT_USER);
     $sth->execute(array($nom, $prenom, $datenaissance, $mail, md5($motdepasse)));
   }

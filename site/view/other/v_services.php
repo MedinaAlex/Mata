@@ -277,7 +277,7 @@
                             echo "<td>".$service->getType()."</td>";
                             echo "<td>".$service->getCategorie()."</td>";
                             echo "<td>".$service->getDuree()."</td>";
-                            echo '<td><a class="btn btn-primary" href="index.php?controler=contact&action=contact&id='.$service->getId_user().'" role="button">Contacter</a></td>';                                       
+                            echo '<td><a class="btn btn-primary" href="view/other/removeService.php?id='.$service->getId().'" role="button">Supprimer</a></td>';                                       
                         echo "</tr>";
                     }
                 }
