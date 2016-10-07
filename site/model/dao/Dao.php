@@ -237,8 +237,9 @@ sinon null est retourné
   public function deleteService($id)
   {
     $this->connexion();
-    $sth = $this->connexion->prepare($this->INSERT_USER);
-    $sth->execute(array($nom, $prenom, $datenaissance, $mail, md5($motdepasse)));
+    $stmt = $this->connexion->query("delete from service where id = '$id'");
+
+    $stmt->execute();
   }
 
 
