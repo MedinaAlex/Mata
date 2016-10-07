@@ -242,6 +242,38 @@
             </div>
   </div></div>
 
+   <div class="tab-pane fade" id="tabAddService"><div class="row">
+    <div class="span">
+            <table class="table table-striped table-responsive">
+                  <thead class="th">
+                  <tr>
+                      <th>Nom</th>
+                      <th>Type</th>
+                      <th>Service</th>
+                      <th>Durée</th>                                       
+                  </tr>
+              </thead>   
+              <tbody>
+              <?php
+                $dao = New Dao();
+                $services = $dao->getListeServiceById($_SESSION['id_user']);
+                if ($services!=null){
+                    foreach ($services as $service){
+                        echo "<tr>";
+                            echo "<td>" . $service->getNom() . "</td>";
+                            echo "<td>".$service->getType()."</td>";
+                            echo "<td>".$service->getCategorie()."</td>";
+                            echo "<td>".$service->getDuree()."</td>";
+                            echo '<td><a class="btn btn-primary" href="index.php?controler=contact&action=contact&id='.$service->getId_user().'" role="button">Contacter</a></td>';                                       
+                        echo "</tr>";
+                    }
+                }
+              ?>                           
+              </tbody>
+            </table>
+            </div>
+  </div></div>
+
                         
 
                    

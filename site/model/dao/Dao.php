@@ -120,6 +120,25 @@ sinon null est retourné
     }
   }
 
+  public function getListeServiceById($id) 
+  {
+    $services = array();
+
+    try {
+      $this->connexion();
+      $stmt = $this->connexion->query("SELECT * FROM service where user_id = '$id'");
+      $services = $stmt->fetchAll(PDO::FETCH_CLASS, "Service");
+
+      $this->deconnexion();
+      return $services;
+
+    }catch (AccesTableException $e) {
+      echo $e->afficher();
+    }catch (ConnexionException $e){
+      echo $e->afficher();
+    }
+  }
+
   public function getListeUtilisateur() 
   {
     $services = array();
