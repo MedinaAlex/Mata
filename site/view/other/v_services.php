@@ -7,6 +7,10 @@
     require_once($path."/model/bean/Service.php");
     require_once($path."/model/bean/Utilisateur.php");
 
+    if(isset($_SESSION['is_connected']) && ! $_SESSION['is_connected']){
+        header("Location: ../../index.php");
+
+    }
 ?>
 <nav class="navbar navbar-default" style="background-color:#3366ff;width:80%;margin:auto;margin-top:50px;">
   <div class="container-fluid">
@@ -28,7 +32,7 @@
         <li><a data-toggle="modal" data-target="#addService" style="color:white;"><i class="fa fa-plus"></i>  Ajouter un service</a></li>
         </Ul>
       <ul class="nav navbar-nav navbar-right" style="color:white;">
-        <li><a href="#" style="color:white;"><i class="fa fa-sign-out"></i>  Déconnexion</a></li>
+        <li><a href="view/other/deconnexion.php" style="color:white;"><i class="fa fa-sign-out"></i>  Déconnexion</a></li>
           </ul>
         </li>
       </ul>

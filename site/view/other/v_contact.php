@@ -7,6 +7,10 @@
     require_once("./model/bean/Service.php");
     require_once("./model/bean/Utilisateur.php");
 
+    if(isset($_SESSION['is_connected']) && ! $_SESSION['is_connected']){
+        header("Location: ../../index.php");
+        
+    }
 ?>
 
 
@@ -30,7 +34,7 @@
         <li><a href="#" style="color:white;"><i class="fa fa-user"></i>  Contact</a></li>
         </Ul>
       <ul class="nav navbar-nav navbar-right" style="color:white;">
-        <li><a href="#" style="color:white;"><i class="fa fa-sign-out"></i>  Déconnexion</a></li>
+        <li><a href="view/other/deconnexion.php" style="color:white;"><i class="fa fa-sign-out"></i>  Déconnexion</a></li>
           </ul>
         </li>
       </ul>
