@@ -258,10 +258,11 @@
                 $dao = New Dao();
                 $id_user = $_SESSION['id_user'];
                 $services = $dao->getListeServiceById($id_user);
+                echo $id_user;
                 if ($services!=null){
                     foreach ($services as $service){
                         echo "<tr>";
-                            echo "<td>" . $service->getNom() . "</td>";
+                            echo "<td>".$service->getNom()."</td>";
                             echo "<td>".$service->getType()."</td>";
                             echo "<td>".$service->getCategorie()."</td>";
                             echo "<td>".$service->getDuree()."</td>";
