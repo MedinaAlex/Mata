@@ -5,6 +5,6 @@
  
     $dao = New Dao();
     $id = $_GET['id'];
-    $dao->deleteService();
+    $dao->deleteService($id);
     header("Location: ../../index.php?controler=test&action=services");
 ?>
